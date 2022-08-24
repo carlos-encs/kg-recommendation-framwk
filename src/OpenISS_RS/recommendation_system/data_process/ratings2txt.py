@@ -11,7 +11,7 @@ def save_rating_triples(username,password):
         relation = i[1]
         tail = i[2]
         result += head + "::" + tail + "::" + relation + "\n"
-        f = open("../../data/movie/rating.txt", "a")
+        f = open("../../../../data/movie/rating.txt", "a")
         f.write(result)
         f.close()
 
