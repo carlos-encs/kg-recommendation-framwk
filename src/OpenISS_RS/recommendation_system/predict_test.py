@@ -48,7 +48,7 @@ def pre_scores(user_num,item_num):
         # print(neg_item_index)
 
 def get_user_infos(user_id):
-    theline = linecache.getline("../../data/movie/users_info_final.txt", user_id+1)
+    theline = linecache.getline("../../../data/movie/users_info_final.txt", user_id+1)
     infos = theline.split("\t")
     user_gender = [infos[1]]
     user_age = [infos[2]]
