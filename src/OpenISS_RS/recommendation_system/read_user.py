@@ -23,7 +23,7 @@ def get_usr_info(path):
     return use_info, max_usr_id
 
 
-usr_file = "/Users/yuhaomao/Downloads/ml-1m/users.dat"
+usr_file = "../../../data/movie/users.dat"
 usr_info, max_usr_id = get_usr_info(usr_file)
 print("user numbers:", len(usr_info))
 print("max user ID:", max_usr_id)
