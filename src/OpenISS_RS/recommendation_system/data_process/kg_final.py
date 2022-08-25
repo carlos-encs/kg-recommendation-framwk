@@ -56,7 +56,7 @@ def rating_final(rating_file_path,movie_dict):
                 result += str(user_id) + "\t" + str(i) + "\t" + "0" + "\n"
             positive_list = []
 
-            f = open("../../../../data/movie/ratings_final.txt", "a")
+            f = open("../../../data/movie/ratings_final.txt", "a")
             f.write(result)
             f.close()
             result = ""
@@ -106,7 +106,7 @@ def rating_final_user(rating_file_path, movie_dict,user_file_path):
                 result += str(user_dict[user_id]) + "\t" + str(i) + "\t" + "0" + "\n"
             positive_list = []
 
-            f = open("../../../../data/movie/ratings_final.txt", "a")
+            f = open("../../../data/movie/ratings_final.txt", "a")
             f.write(result)
             f.close()
             result = ""
@@ -117,13 +117,13 @@ def rating_final_user(rating_file_path, movie_dict,user_file_path):
     
 
 
-kg_file_path = "../../../../data/movie/kg.txt"
+kg_file_path = "../../../data/movie/kg.txt"
 movie_dict = {}
 relation_dict = {}
 person_dict = {}
 kg_final(kg_file_path,movie_dict,relation_dict,person_dict)
 
-rating_file_path = "../../../../data/movie/rating.txt"
-user_file_path = "../../../../data/movie/users.dat"
+rating_file_path = "../../../data/movie/rating.txt"
+user_file_path = "../../../data/movie/users.dat"
 # rating_final(rating_file_path,movie_dict)
 rating_final_user(rating_file_path,movie_dict,user_file_path)
